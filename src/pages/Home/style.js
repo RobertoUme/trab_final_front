@@ -149,7 +149,7 @@ export const Container = styled.div`
   button{
     font-size: 18px;
     margin-left: 20%;
-    padding:6% 5%;
+    padding:6% 2%;
     margin-bottom: 5px;
     width: 200px;
     text-align: center;
@@ -163,12 +163,12 @@ export const Container = styled.div`
     color:white;
     margin: 10px;
     margin-left: 20%;
-    padding: 0.5% 5%;
+    padding:6% 2%;
     margin-bottom: 5px;
     width: 200px;
     text-align: center;
     cursor: pointer;
-    background-color:#880000;
+    background-color:#ff0000;
   }
   form{
     margin-left:20%;
@@ -206,11 +206,18 @@ export const Container = styled.div`
       margin-left: 10px;
     }
     .link {
-      margin-left: 15%;
+      margin-left: 10%;
     }
 
     .link:hover {
-      margin-left: 15%;
+      margin-left: 10%;
     }
+    button{
+    width: 140px;
+  }
+
+  button:hover{
+    width: 140px;
+  }
   }
 `;

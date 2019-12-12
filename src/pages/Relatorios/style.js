@@ -138,7 +138,7 @@ export const Container = styled.div`
     padding: 7px;
     color: #fff;
     line-height: 1.4;
-    background-color: #408acf;
+    background-color: #00000f;
   }
 
   tr:nth-child(odd) {

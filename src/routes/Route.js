@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { isAuthenticated, isTokenExpired, logout } from "../services/auth";
+import { isTokenExpired, logout } from "../services/auth";
 export default function RouterWeapper({
   component: Component,
   isPrivate = false,
@@ -8,14 +8,6 @@ export default function RouterWeapper({
 }) {
   const signed = !!localStorage.getItem("@CESTA/token");
   console.log(signed);
-
-  if (!isAuthenticated() && isPrivate) {
-    return <Redirect to="/" />;
-  }
-  if (isAuthenticated() && !isPrivate) {
-    return <Redirect to="/Home" />;
-  }
-
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
